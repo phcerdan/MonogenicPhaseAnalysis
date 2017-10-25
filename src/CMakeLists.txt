@@ -9,7 +9,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(EXT_PROJECTS_DIR ${CMAKE_SOURCE_DIR}/external)
 
 
-find_package(ITK COMPONENTS IsotropicWavelets ITKIOImageBase ITKIOTIFF REQUIRED)
+find_package(ITK COMPONENTS IsotropicWavelets ITKIOImageBase ITKIOTIFF ITKIOPNG ITKIOJPEG REQUIRED)
 include_directories(${ITK_INCLUDE_DIRS})
 include(${ITK_USE_FILE})
 message(status "** ITK Libraries:  ${ITK_LIBRARIES}")
